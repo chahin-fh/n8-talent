@@ -10,3 +10,4 @@
    ```sh
    pip install flask flask-jwt-extended flask-sqlalchemy flask-cors bcrypt pyms pymysql
    ```
+buit d'iinfo
