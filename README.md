@@ -10,4 +10,3 @@
    ```sh
    pip install flask flask-jwt-extended flask-sqlalchemy flask-cors bcrypt pyms pymysql
    ```
-nuit d'info
