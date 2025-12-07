@@ -5,7 +5,7 @@ def set_config(app):
 	app.config["JWT_TOKEN_LOCATION"] = ["cookies"]
 	app.config["JWT_ACCESS_COOKIE_NAME"] = "ctoken"
 	app.config["JWT_COOKIE_CSRF_PROTECT"] = False
-	app.config["SQLALCHEMY_DATABASE_URI"] = "mysql+pymysql://avnadmin:AVNS_hJ17HcmZcO2Vc_wPKaF@mysql-24a408de-malali3b-c223.c.aivencloud.com:11284/defaultdb?sql_mode=REQUIRED"
+	app.config["SQLALCHEMY_DATABASE_URI"] = "mysql+pymysql://avnadmin:AVNS_hJ17HcmZcO2Vc_wPKaF@mysql-24a408de-malali3b-c223.c.aivencloud.com:11284/defaultdb?"
 	app.config['SQLALCHEMY_ENGINE_OPTIONS'] = {
 	    "connect_args": {
 	        "sql_mode": ""
