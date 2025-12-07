@@ -3,8 +3,8 @@ import { AuthContext } from "../auth/AuthContext";
 import { ArrowRightOnRectangleIcon } from "@heroicons/react/24/outline";
 import { Link } from "react-router-dom";
 
-const decode_endpoint = "http://localhost:5000/decode";
-const signout_endpoint = "http://localhost:5000/signout";
+const decode_endpoint = "https://n8-talent.onrender.com/decode";
+const signout_endpoint = "https://n8-talent.onrender.com/signout";
 
 type UserInformation = {
   email?: string;

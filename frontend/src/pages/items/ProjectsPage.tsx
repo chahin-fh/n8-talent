@@ -35,7 +35,7 @@ export default function ProjectsPage() {
 
   const fetchProjects = async () => {
     try {
-      const res = await fetch("http://localhost:5000/get_projects", { credentials: "include" });
+      const res = await fetch("https://n8-talent.onrender.com/get_projects", { credentials: "include" });
       const data: Project[] = await res.json();
       setProjects(data);
     } catch (err) { console.error(err); }
@@ -43,7 +43,7 @@ export default function ProjectsPage() {
 
   const fetchRecommendations = async () => {
     try {
-      const res = await fetch("http://localhost:5000/recommend_projects", { credentials: "include" });
+      const res = await fetch("https://n8-talent.onrender.com/recommend_projects", { credentials: "include" });
       const data: Project[] = await res.json();
       setRecommended(data);
     } catch (err) { console.error(err); }
@@ -68,7 +68,7 @@ export default function ProjectsPage() {
     e.preventDefault();
     if (!name.trim()) return;
     try {
-      const res = await fetch("http://localhost:5000/add_project", {
+      const res = await fetch("https://n8-talent.onrender.com/add_project", {
         method: "POST",
         credentials: "include",
         headers: { "Content-Type": "application/json" },

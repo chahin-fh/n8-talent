@@ -13,7 +13,7 @@ interface AuthProviderProps {
 // eslint-disable-next-line react-refresh/only-export-components
 export const AuthContext = createContext<AuthContextType | undefined>(undefined);
 
-const verify_endpoint = "http://localhost:5000/verify";
+const verify_endpoint = "https://n8-talent.onrender.com/verify";
 
 export const AuthProvider = ({ children }: AuthProviderProps) => {
   const [active, set_active] = useState(false);

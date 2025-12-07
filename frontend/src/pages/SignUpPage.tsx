@@ -1,7 +1,7 @@
 import { useState, useContext } from "react";
 import { AuthContext } from "../auth/AuthContext";
 
-const signup_endpoint = "http://localhost:5000/signup";
+const signup_endpoint = "https://n8-talent.onrender.com/signup";
 
 const SignUpPage = () => {
     const [email, set_email] = useState("");

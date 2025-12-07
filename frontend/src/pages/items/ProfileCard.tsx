@@ -10,7 +10,7 @@ export default function ProfileCard() {
 
   const fetchInfo = async () => {
     try {
-      const res = await fetch("http://localhost:5000/get_info", {
+      const res = await fetch("https://n8-talent.onrender.com/get_info", {
         method: "GET",
         credentials: "include",
       });
@@ -33,7 +33,7 @@ export default function ProfileCard() {
     if (!newCompt.trim()) return;
 
     try {
-      await fetch("http://localhost:5000/add_compt", {
+      await fetch("https://n8-talent.onrender.com/add_compt", {
         method: "POST",
         credentials: "include",
         headers: { "Content-Type": "application/json" },
@@ -52,7 +52,7 @@ export default function ProfileCard() {
     if (!newLang.trim()) return;
 
     try {
-      await fetch("http://localhost:5000/add_lang", {
+      await fetch("https://n8-talent.onrender.com/add_lang", {
         method: "POST",
         credentials: "include",
         headers: { "Content-Type": "application/json" },
