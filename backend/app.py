@@ -9,7 +9,7 @@ import random
 
 app = Flask(__name__)
 set_config(app)
-CORS(app, supports_credentials=True, origins=["http://localhost:5173"])
+CORS(app, supports_credentials=True, origins=["https://n8-talent.vercel.app"])
 
 db = SQLAlchemy(app)
 
